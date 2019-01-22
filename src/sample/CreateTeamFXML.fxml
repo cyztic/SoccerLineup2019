@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="740.0" prefWidth="921.0" style="-fx-background-color: #294F6D;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.CreateTeamController">
+   <children>
+      <Text fill="#5d86a6" layoutX="320.0" layoutY="70.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Create a team">
+         <font>
+            <Font name="Haettenschweiler" size="64.0" />
+         </font>
+      </Text>
+      <Button fx:id="addPlayer" layoutX="612.0" layoutY="110.0" mnemonicParsing="false" onAction="#add" prefHeight="38.0" prefWidth="115.0" style="-fx-background-color: #0B2335;" text="Add  Player" textFill="#5d86a6" />
+      <VBox fx:id="bench" layoutX="612.0" layoutY="172.0" prefHeight="549.0" prefWidth="262.0" style="-fx-background-color: #5d86a6;" />
+      <Button fx:id="removePlayer" layoutX="759.0" layoutY="110.0" mnemonicParsing="false" onAction="#remove" prefHeight="38.0" prefWidth="115.0" style="-fx-background-color: #0B2335;" text="Remove  Player" textFill="#5d86a6" />
+      <ImageView fx:id="imageViewer" fitHeight="612.0" fitWidth="405.0" layoutX="56.0" layoutY="110.0" pickOnBounds="true" preserveRatio="true" />
+   </children>
+</AnchorPane>
