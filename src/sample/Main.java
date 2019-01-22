@@ -65,7 +65,7 @@ public class Main extends Application {
     }
 
 
-
+//testing if this is works
     @FXML
     void quit() {
         Platform.exit();
