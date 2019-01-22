@@ -28,9 +28,6 @@ public class Main extends Application {
     }
 
     @FXML
-    private Button createTeam;
-
-    @FXML
     private Button useExistingTeam;
 
     @FXML
@@ -62,8 +59,6 @@ public class Main extends Application {
         myStage.showAndWait();
     }
 
-
-//testing if this is works
     @FXML
     void quit() {
         Platform.exit();

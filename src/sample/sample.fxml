@@ -11,9 +11,9 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="750.0" style="-fx-background-color: #294F6D;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Main">
    <children>
-      <Text fill="#5d86a6" layoutX="97.0" layoutY="70.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Soccer Lineup Manager 2019">
+      <Text fill="#5d86a6" layoutX="68.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Soccer Lineup Manager 2019">
          <font>
-            <Font name="Haettenschweiler" size="64.0" />
+            <Font size="48.0" />
          </font>
       </Text>
       <Button fx:id="createTeam" layoutX="296.0" layoutY="108.0" mnemonicParsing="false" onAction="#createTeam" prefHeight="38.0" prefWidth="159.0" style="-fx-background-color: #0B2335;" text="Create a new team" textFill="#5d86a6">
