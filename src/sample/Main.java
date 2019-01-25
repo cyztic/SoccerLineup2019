@@ -20,7 +20,6 @@ import java.util.Scanner;
 public class Main extends Application {
 
     public Stage primaryStageClone = null;
-    Scanner s;
 
     @Override
     public void start(Stage primaryStage) throws Exception{
@@ -67,18 +66,6 @@ public class Main extends Application {
 
     @FXML
     void loadATeam(){
-        ArrayList<String> teamNames = new ArrayList();
-        File f  = new File("TeamNames.txt");
-
-        s = getScanner(f);
-
-        while (s.hasNextLine())
-        {
-            String str = s.nextLine();
-
-            teamNames.add(str);
-        }
-
 
         //start up new form to pick team
         FXMLLoader loader = null;
@@ -109,19 +96,6 @@ public class Main extends Application {
         Platform.exit();
     }
 
-    // Receives: a file
-    // Task: create a scanner to a file of users choice
-    // Returns: Scanner
-    public Scanner getScanner(File f) {
-        try {
-            s = new Scanner(f);
-        } catch (FileNotFoundException e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
-        }
-
-        return s;
-    }
 
     public static void main(String[] args) {
         launch(args);
