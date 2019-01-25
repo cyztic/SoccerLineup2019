@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.*?>
 <?import javafx.scene.image.*?>
 <?import javafx.scene.text.*?>
 <?import java.lang.*?>
@@ -8,16 +9,35 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="740.0" prefWidth="921.0" style="-fx-background-color: #294F6D;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.CreateTeamController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="989.0" prefWidth="823.0" style="-fx-background-color: #294F6D;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.CreateTeamController">
    <children>
-      <Text fill="#5d86a6" layoutX="264.0" layoutY="69.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Create a team">
+      <ImageView fx:id="imageViewer" fitHeight="865.0" fitWidth="600.0" layoutX="15.0" layoutY="115.0" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="teamTitle" alignment="CENTER" contentDisplay="CENTER" prefHeight="93.0" prefWidth="823.0" text="Create a Team" textFill="#5d86a6">
          <font>
-            <Font name="Haettenschweiler" size="64.0" />
+            <Font size="64.0" />
          </font>
-      </Text>
-      <Button fx:id="addPlayer" layoutX="612.0" layoutY="110.0" mnemonicParsing="false" onAction="#add" prefHeight="38.0" prefWidth="115.0" style="-fx-background-color: #0B2335;" text="Add  Player" textFill="#5d86a6" />
-      <VBox fx:id="bench" layoutX="612.0" layoutY="172.0" prefHeight="549.0" prefWidth="262.0" style="-fx-background-color: #5d86a6;" />
-      <Button fx:id="removePlayer" layoutX="759.0" layoutY="110.0" mnemonicParsing="false" onAction="#remove" prefHeight="38.0" prefWidth="115.0" style="-fx-background-color: #0B2335;" text="Remove  Player" textFill="#5d86a6" />
-      <ImageView fx:id="imageViewer" fitHeight="612.0" fitWidth="405.0" layoutX="56.0" layoutY="110.0" pickOnBounds="true" preserveRatio="true" />
+      </Label>
+      <VBox layoutX="646.0" layoutY="456.0" prefHeight="222.0" prefWidth="150.0" spacing="10.0" style="-fx-background-color: #5d86a6;">
+         <children>
+            <Button fx:id="renamePlayer" mnemonicParsing="false" onAction="#rename" prefHeight="40.0" prefWidth="121.0" style="-fx-background-color: #0B2335;" text="Rename Player" textFill="#5d86a6" />
+            <Button fx:id="reset" mnemonicParsing="false" prefHeight="40.0" prefWidth="121.0" style="-fx-background-color: #0B2335;" text="Reset" textFill="#5d86a6" />
+            <Button fx:id="save" mnemonicParsing="false" prefHeight="40.0" prefWidth="121.0" style="-fx-background-color: #0B2335;" text="Save" textFill="#5d86a6" />
+            <Button fx:id="exit" mnemonicParsing="false" onAction="#exit" prefHeight="40.0" prefWidth="121.0" style="-fx-background-color: #0B2335;" text="Exit" textFill="#5d86a6" />
+         </children>
+         <padding>
+            <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+         </padding>
+      </VBox>
+      <Button fx:id="st" layoutX="254.0" layoutY="179.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="121.0" style="-fx-background-color: #0B2335;" text="ST" textFill="#5d86a6" />
+      <Button fx:id="lw" layoutX="34.0" layoutY="234.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="121.0" style="-fx-background-color: #0B2335;" text="LW" textFill="#5d86a6" />
+      <Button fx:id="rw" layoutX="476.0" layoutY="234.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="121.0" style="-fx-background-color: #0B2335;" text="RW" textFill="#5d86a6" />
+      <Button fx:id="cam" layoutX="255.0" layoutY="377.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="121.0" style="-fx-background-color: #0B2335;" text="CAM" textFill="#5d86a6" />
+      <Button fx:id="lm" layoutX="113.0" layoutY="527.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="121.0" style="-fx-background-color: #0B2335;" text="CM" textFill="#5d86a6" />
+      <Button fx:id="rm" layoutX="392.0" layoutY="527.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="121.0" style="-fx-background-color: #0B2335;" text="CM" textFill="#5d86a6" />
+      <Button fx:id="lb" layoutX="34.0" layoutY="716.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="121.0" style="-fx-background-color: #0B2335;" text="LB" textFill="#5d86a6" />
+      <Button fx:id="lcb" layoutX="182.0" layoutY="716.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="121.0" style="-fx-background-color: #0B2335;" text="CB" textFill="#5d86a6" />
+      <Button fx:id="rcb" layoutX="323.0" layoutY="716.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="121.0" style="-fx-background-color: #0B2335;" text="CB" textFill="#5d86a6" />
+      <Button fx:id="rbb" layoutX="476.0" layoutY="716.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="121.0" style="-fx-background-color: #0B2335;" text="RB" textFill="#5d86a6" />
+      <Button fx:id="gk" layoutX="254.0" layoutY="857.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="121.0" style="-fx-background-color: #0B2335;" text="GK" textFill="#5d86a6" />
    </children>
 </AnchorPane>

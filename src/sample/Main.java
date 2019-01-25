@@ -9,6 +9,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
+import javafx.stage.StageStyle;
 
 
 public class Main extends Application {
@@ -55,7 +56,9 @@ public class Main extends Application {
         }
 
         myStage.setScene(myScene);
+        myStage.initStyle(StageStyle.UNDECORATED);
         myStage.initModality(Modality.APPLICATION_MODAL);
+        myStage.setResizable(false);
         myStage.showAndWait();
     }
 
