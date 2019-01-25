@@ -1,0 +1,11 @@
+ST
+LW
+RW
+CAM
+CM
+CM
+CB
+CB
+RB
+LB
+GK

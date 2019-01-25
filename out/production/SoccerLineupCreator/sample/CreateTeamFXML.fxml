@@ -21,7 +21,7 @@
          <children>
             <Button fx:id="renamePlayer" mnemonicParsing="false" onAction="#rename" prefHeight="40.0" prefWidth="121.0" style="-fx-background-color: #0B2335;" text="Rename Player" textFill="#5d86a6" />
             <Button fx:id="reset" mnemonicParsing="false" prefHeight="40.0" prefWidth="121.0" style="-fx-background-color: #0B2335;" text="Reset" textFill="#5d86a6" />
-            <Button fx:id="save" mnemonicParsing="false" prefHeight="40.0" prefWidth="121.0" style="-fx-background-color: #0B2335;" text="Save" textFill="#5d86a6" />
+            <Button fx:id="save" mnemonicParsing="false" onAction="#saveTeam" prefHeight="40.0" prefWidth="121.0" style="-fx-background-color: #0B2335;" text="Save" textFill="#5d86a6" />
             <Button fx:id="exit" mnemonicParsing="false" onAction="#exit" prefHeight="40.0" prefWidth="121.0" style="-fx-background-color: #0B2335;" text="Exit" textFill="#5d86a6" />
          </children>
          <padding>
