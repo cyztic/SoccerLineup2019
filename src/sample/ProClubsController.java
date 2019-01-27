@@ -1,21 +1,23 @@
 package sample;
 
-import javafx.beans.binding.Bindings;
-import javafx.beans.binding.BooleanBinding;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javafx.scene.control.*;
+import javafx.scene.control.Button;
+import javafx.scene.control.Label;
+import javafx.scene.control.TextInputDialog;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.stage.Stage;
 
 import java.io.*;
 import java.net.URL;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Optional;
+import java.util.ResourceBundle;
+import java.util.Scanner;
 
-public class LoadedTeamController implements Initializable {
-
-    LoadedTeamController(String str){teamName = str;}
+public class ProClubsController implements Initializable {
+    ProClubsController(String str){teamName = str;}
     //team name
     String teamName, fileName;
 
@@ -65,7 +67,7 @@ public class LoadedTeamController implements Initializable {
         //add team name to list of team names
 
         // I use the three writers to be more efficient and i can use println function
-        try (FileWriter fw = new FileWriter("Saved Teams/" + fileName, false);
+        try (FileWriter fw = new FileWriter("Pro Teams/" + fileName, false);
              BufferedWriter bw = new BufferedWriter(fw);
              PrintWriter out = new PrintWriter(bw)) {
 
@@ -95,7 +97,7 @@ public class LoadedTeamController implements Initializable {
     // creates them
     // Returns: nothing
     public void createTeamNameFile() {
-        File f = new File("TeamNames.txt");
+        File f = new File("ProClubs.txt");
 
         try {
             f.createNewFile();
@@ -179,7 +181,7 @@ public class LoadedTeamController implements Initializable {
         }
 
 
-        File f  = new File("Saved Teams/"+ teamName + ".txt");
+        File f  = new File("Pro Teams/"+ teamName + ".txt");
 
         s = getScanner(f);
 

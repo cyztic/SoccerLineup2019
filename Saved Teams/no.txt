@@ -1,7 +1,7 @@
 ST
 LW
 RW
-CAM
+player name
 CM
 CM
 CB

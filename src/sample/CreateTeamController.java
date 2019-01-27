@@ -11,6 +11,7 @@ import javafx.stage.Stage;
 
 import java.io.*;
 import java.net.URL;
+import java.util.ArrayList;
 import java.util.Optional;
 import java.util.ResourceBundle;
 import java.util.Scanner;
@@ -26,9 +27,14 @@ public class CreateTeamController implements Initializable {
     //Scanner
     Scanner s;
 
+    //list to hold players names
+    ArrayList<Button> playerNames = new ArrayList();
+
+    //label for title
     @FXML
     private Label teamTitle;
 
+    //image viewer for soccer field image
     @FXML
     private ImageView imageViewer;
 
@@ -36,13 +42,18 @@ public class CreateTeamController implements Initializable {
     @FXML
     private Button st, lw, rw, cam, lm, rm, rbb, rcb, lcb, lb, gk, exit;
 
-    //removes currently selected player from the bench
+    // Receives: none
+    // Task: removes currently selected player from the bench
+    // Returns: nothing
     @FXML
     void exit() {
         Stage stage = (Stage) exit.getScene().getWindow();
         stage.close();
     }
 
+    // Receives: none
+    // Task: allows user to rename selected player
+    // Returns: nothing
     @FXML
     void rename() {
         //open dialog box to get player name
@@ -58,27 +69,27 @@ public class CreateTeamController implements Initializable {
         curPlayer.setText(r);
     }
 
+    // Receives: none
+    // Task: saves the team player names and postions
+    // Returns: nothing
     @FXML
     void saveTeam() {
-        //add team name to list of team names
-        addTeamToTeamNames();
+
+        if(!checkDuplicateName(teamName))
+        {
+            //add team name to list of team names
+            addTeamToTeamNames();
+        }
+
 
         // I use the three writers to be more efficient and i can use println function
         try (FileWriter fw = new FileWriter("Saved Teams/" + fileName, false);
              BufferedWriter bw = new BufferedWriter(fw);
              PrintWriter out = new PrintWriter(bw)) {
 
-            out.println(st.getText());
-            out.println(lw.getText());
-            out.println(rw.getText());
-            out.println(cam.getText());
-            out.println(lm.getText());
-            out.println(rm.getText());
-            out.println(rcb.getText());
-            out.println(lcb.getText());
-            out.println(rbb.getText());
-            out.println(lb.getText());
-            out.println(gk.getText());
+            for(Button b : playerNames){
+                out.println(b.getText());
+            }
 
         } catch (IOException e) {
             // TODO Auto-generated catch block
@@ -86,9 +97,8 @@ public class CreateTeamController implements Initializable {
         }
     }
 
-    // Receives: a string holding the file name
-    // Task: checks to make sure all the database files exist, if they don't it
-    // creates them
+    // Receives: none
+    // Task: creates team names file
     // Returns: nothing
     public void createTeamNameFile() {
         File f = new File("TeamNames.txt");
@@ -101,6 +111,9 @@ public class CreateTeamController implements Initializable {
         }
     }
 
+    //INPUT: none
+    //TASK: adds the team name to the team names file. This allows program to check against duplicates
+    //OUTPUT: none
     public void addTeamToTeamNames() {
         try (FileWriter fw = new FileWriter("TeamNames.txt", true);
              BufferedWriter bw = new BufferedWriter(fw);
@@ -114,6 +127,9 @@ public class CreateTeamController implements Initializable {
         }
     }
 
+    //INPUT: string holding the team name
+    //TASK: adds the team name to the team names file. This allows program to check against duplicates
+    //OUTPUT: none
     public Boolean checkDuplicateName(String str) {
         File f = new File("TeamNames.txt");
         s = getScanner(f);
@@ -141,6 +157,9 @@ public class CreateTeamController implements Initializable {
         return s;
     }
 
+    //INPUT: Button of player
+    //TASK: sets the drag drop, height, and width of button
+    //OUTPUT: none
     private void populateTeam(Button player) {
         //create player object
         player.setPrefWidth(120);
@@ -170,6 +189,9 @@ public class CreateTeamController implements Initializable {
         });
     }
 
+    //INPUT: url and resource bundle
+    //TASK: called to perform everything inside method on start up of form
+    //OUTPUT: none
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         File file = new File("src/soccerfield.png");
@@ -200,17 +222,21 @@ public class CreateTeamController implements Initializable {
         teamTitle.setText(teamName);
         fileName = teamName + ".txt";
 
-        populateTeam(st);
-        populateTeam(lw);
-        populateTeam(rw);
-        populateTeam(cam);
-        populateTeam(lm);
-        populateTeam(rm);
-        populateTeam(lb);
-        populateTeam(rbb);
-        populateTeam(rcb);
-        populateTeam(lcb);
-        populateTeam(gk);
+        playerNames.add(st);
+        playerNames.add(lw);
+        playerNames.add(rw);
+        playerNames.add(cam);
+        playerNames.add(lm);
+        playerNames.add(rm);
+        playerNames.add(rcb);
+        playerNames.add(lcb);
+        playerNames.add(rbb);
+        playerNames.add(lb);
+        playerNames.add(gk);
+
+        for(Button b : playerNames){
+            populateTeam(b);
+        }
     }
 }
 

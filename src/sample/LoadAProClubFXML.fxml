@@ -7,7 +7,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane prefHeight="520.0" prefWidth="776.0" style="-fx-background-color: #294F6D;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.LoadACustomTeam">
+<AnchorPane prefHeight="520.0" prefWidth="776.0" style="-fx-background-color: #294F6D;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.LoadProClub">
    <children>
       <ListView fx:id="names" layoutX="257.0" layoutY="97.0" prefHeight="327.0" prefWidth="257.0" style="-fx-background-color: #5d86a6;" />
       <Label layoutX="196.0" layoutY="56.0" text="Choose a team you woud like to load:" textFill="#5d86a6">
@@ -15,7 +15,7 @@
             <Font name="Franklin Gothic Medium" size="24.0" />
          </font>
       </Label>
-      <Button fx:id="load" layoutX="290.0" layoutY="434.0" mnemonicParsing="false" onAction="#load" text="Load" />
+      <Button layoutX="290.0" layoutY="434.0" mnemonicParsing="false" onAction="#load" text="Load" />
       <Button fx:id="cancel" layoutX="423.0" layoutY="434.0" mnemonicParsing="false" onAction="#exit" text="Cancel" />
    </children>
 </AnchorPane>

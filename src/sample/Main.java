@@ -65,6 +65,30 @@ public class Main extends Application {
     }
 
     @FXML
+    void loadAProClub() {
+        //start up new form to pick team
+        FXMLLoader loader = null;
+        Stage myStage = new Stage();
+        Scene myScene;
+        try
+        {
+            loader = new FXMLLoader(getClass().getResource("LoadAProClubFXML.fxml"));
+            myScene = new Scene(loader.load());
+        }
+        catch (Exception e)
+        {
+            System.out.println("Something went wrong while building new fxml");
+            System.out.println(e);
+            return;
+        }
+
+        myStage.setScene(myScene);
+        myStage.initStyle(StageStyle.UNDECORATED);
+        myStage.initModality(Modality.APPLICATION_MODAL);
+        myStage.setResizable(false);
+        myStage.showAndWait();
+    }
+    @FXML
     void loadATeam(){
 
         //start up new form to pick team

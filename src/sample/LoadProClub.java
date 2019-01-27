@@ -1,14 +1,11 @@
 package sample;
 
-import javafx.application.Platform;
-import javafx.beans.binding.Bindings;
-import javafx.beans.binding.BooleanBinding;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Scene;
-import javafx.scene.control.*;
-import javafx.scene.image.Image;
+import javafx.scene.control.Button;
+import javafx.scene.control.ListView;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
@@ -17,12 +14,10 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.net.URL;
 import java.util.ArrayList;
-import java.util.Optional;
 import java.util.ResourceBundle;
 import java.util.Scanner;
 
-public class CustomTeams implements Initializable {
-
+public class LoadProClub implements Initializable {
     Scanner s;
 
     @FXML
@@ -41,9 +36,11 @@ public class CustomTeams implements Initializable {
         FXMLLoader loader = null;
         Stage myStage = new Stage();
         Scene myScene;
+        String team = names.getSelectionModel().getSelectedItem().toString();
         try
         {
-            loader = new FXMLLoader(getClass().getResource("LoadedTeamFXML.fxml"));
+            loader = new FXMLLoader(getClass().getResource("ProClubsFXML.fxml"));
+            loader.setController(new ProClubsController(team));
             myScene = new Scene(loader.load());
         }
         catch (Exception e)
@@ -58,6 +55,9 @@ public class CustomTeams implements Initializable {
         myStage.initModality(Modality.APPLICATION_MODAL);
         myStage.setResizable(false);
         myStage.showAndWait();
+
+        Stage stage = (Stage) cancel.getScene().getWindow();
+        stage.close();
     }
 
     // Receives: a file
@@ -73,12 +73,13 @@ public class CustomTeams implements Initializable {
 
         return s;
     }
+
     @Override
     public void initialize(URL url, ResourceBundle rb) {
 
         ArrayList<String> teamNames = new ArrayList();
 
-        File f  = new File("TeamNames.txt");
+        File f  = new File("ProClubs.txt");
 
         s = getScanner(f);
 

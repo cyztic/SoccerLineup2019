@@ -21,7 +21,7 @@
             <Font size="14.0" />
          </font>
       </Button>
-      <Button fx:id="useExisitngTeam" layoutX="296.0" layoutY="193.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="159.0" style="-fx-background-color: #0B2335;" text="Professional Clubs" textFill="#5d86a6">
+      <Button fx:id="useExisitngTeam" layoutX="296.0" layoutY="193.0" mnemonicParsing="false" onAction="#loadAProClub" prefHeight="38.0" prefWidth="159.0" style="-fx-background-color: #0B2335;" text="Professional Clubs" textFill="#5d86a6">
          <font>
             <Font size="14.0" />
          </font>

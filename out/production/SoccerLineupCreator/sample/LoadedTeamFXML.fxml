@@ -9,7 +9,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="989.0" prefWidth="823.0" style="-fx-background-color: #294F6D;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.CreateTeamController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="989.0" prefWidth="823.0" style="-fx-background-color: #294F6D;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <ImageView fx:id="imageViewer" fitHeight="865.0" fitWidth="600.0" layoutX="15.0" layoutY="115.0" pickOnBounds="true" preserveRatio="true" />
       <Label fx:id="teamTitle" alignment="CENTER" contentDisplay="CENTER" prefHeight="93.0" prefWidth="823.0" text="Create a Team" textFill="#5d86a6">
