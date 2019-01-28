@@ -3,27 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved Teams/Team name.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved Teams/josh.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Saved Teams/josh.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved Teams/josh1.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved Teams/noooo.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved Teams/poop.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pro Teams/Arsenal.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Pro Teams/Arsenal.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pro Teams/Manchester City.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Pro Teams/Manchester City.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TeamNames.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TeamNames.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SoccerLineupCreator/sample/CreateTeamController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SoccerLineupCreator/sample/CreateTeamController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SoccerLineupCreator/sample/CustomTeams.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SoccerLineupCreator/sample/CustomTeamsFXML.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SoccerLineupCreator/sample/CustomTeamsFXML.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SoccerLineupCreator/sample/Delta.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SoccerLineupCreator/sample/Delta.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SoccerLineupCreator/sample/LoadedTeamController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SoccerLineupCreator/sample/LoadedTeamController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SoccerLineupCreator/sample/LoadedTeamFXML.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SoccerLineupCreator/sample/LoadedTeamFXML.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SoccerLineupCreator/sample/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SoccerLineupCreator/sample/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SoccerLineupCreator/sample/sample.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SoccerLineupCreator/sample/sample.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/CreateTeamController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/CreateTeamController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/CustomTeams.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/LoadACustomTeam.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/CustomTeamsFXML.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/CustomTeamsFXML.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/LoadedTeamController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/LoadedTeamController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/LoadedTeamFXML.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/LoadedTeamFXML.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/sample.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/sample.fxml" afterDir="false" />
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -116,16 +98,46 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sample/ProClubsController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="99" column="36" selection-start-line="99" selection-start-column="36" selection-end-line="99" selection-end-column="36" />
+            <state relative-caret-position="1581">
+              <caret line="93" lean-forward="true" selection-start-line="93" selection-end-line="93" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/sample/LoadAProClubFXML.fxml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" column="32" lean-forward="true" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
+            </state>
+          </provider>
+          <provider editor-type-id="JavaFX-Scene-Builder" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/sample/ProClubsFXML.fxml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="16" column="32" lean-forward="true" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
+            </state>
+          </provider>
+          <provider editor-type-id="JavaFX-Scene-Builder" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/sample/LoadedTeamFXML.fxml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="19" column="135" selection-start-line="19" selection-start-column="135" selection-end-line="19" selection-end-column="135" />
+            </state>
+          </provider>
+          <provider editor-type-id="JavaFX-Scene-Builder" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -194,7 +206,7 @@
     </option>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="85" />
     <option name="y" value="25" />
     <option name="width" value="1750" />
@@ -244,7 +256,7 @@
     <property name="MemberChooser.sorted" value="false" />
     <property name="OverrideImplement.combined" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548624712145" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548687611533" />
     <property name="dynamic.classpath" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
@@ -428,22 +440,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/LoadedTeamFXML.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="135" selection-start-line="19" selection-start-column="135" selection-end-line="19" selection-end-column="135" />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/CustomTeamsFXML.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="16" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/LoadACustomTeam.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
@@ -474,14 +470,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/LoadAProClubFXML.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="107" lean-forward="true" selection-start-line="12" selection-start-column="107" selection-end-line="12" selection-end-column="107" />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/LoadProClub.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="901">
@@ -492,23 +480,47 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/ProClubsFXML.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="150" lean-forward="true" selection-start-line="14" selection-start-column="150" selection-end-line="14" selection-end-column="150" />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/ProClubsController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="99" column="36" selection-start-line="99" selection-start-column="36" selection-end-line="99" selection-end-column="36" />
+        <state relative-caret-position="1581">
+          <caret line="93" lean-forward="true" selection-start-line="93" selection-end-line="93" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/LoadAProClubFXML.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="32" lean-forward="true" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/ProClubsFXML.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="32" lean-forward="true" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/CustomTeamsFXML.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="160" selection-start-line="9" selection-start-column="160" selection-end-line="9" selection-end-column="197" />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/LoadedTeamFXML.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="135" selection-start-line="19" selection-start-column="135" selection-end-line="19" selection-end-column="135" />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
   </component>
   <component name="masterDetails">
